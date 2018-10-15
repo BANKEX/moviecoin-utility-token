@@ -1,10 +1,10 @@
 pragma solidity ^0.4.24;
 
 import "openzeppelin-solidity/contracts/token/ERC20/StandardToken.sol";
-import "openzeppelin-solidity/contracts/token/ERC20/PausableToken.sol";
+import "openzeppelin-solidity/contracts/ownership/CanReclaimToken.sol";
 
 
-contract MovieCoin is StandardToken, PausableToken {
+contract MovieCoin is StandardToken, CanReclaimToken {
     string constant public symbol = "MOV";
     string constant public name = "\"MovieCoin\" project utility token";
     uint8 constant public decimals = 18;
