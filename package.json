@@ -26,7 +26,7 @@
   "scripts": {
     "test": "scripts/test.sh",
     "coverage": "scripts/coverage.sh",
-    "dist": "truffle-flattener ./contracts/MovieCoin.sol",
+    "dist": "truffle-flattener ./contracts/MovieCoin.sol > dist.sol",
     "lint:js": "eslint .",
     "lint:js:fix": "eslint . --fix",
     "lint:sol": "solium -d .",
